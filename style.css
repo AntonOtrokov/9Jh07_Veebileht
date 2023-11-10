@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+}
+
+.review_picture_container {
+    float: left ;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.review_picture {
+    width: 480px;
+}
