@@ -1,7 +1,6 @@
 body {
-    text-align: left;
     background-color: rgb(39, 38, 38);
-    color:white
+    color:white;
 }
 img{
     border-style: solid;
@@ -11,13 +10,25 @@ img{
 }
 h1{
     font-style:italic;
+    text-align: left;
     
-    
+}
+
+.review{
+    max-width: 500px;
+    text-align: left;
 
 }
 
-div{
-    max-width: 600px;
-    align-items:center;
-    
+.upper-row {
+    display:flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content:space-around;
+    border-style: solid;
+    border-color: black;
+}
+
+.upper-row-button {
+    margin-top: 30px;
 }
