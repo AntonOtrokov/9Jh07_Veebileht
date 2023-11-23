@@ -1,23 +1,31 @@
 body {
     background-color: darkslategrey; /* Muuda paremaks värviks */
-    
 }
 
 .review-container {
     float: left ;
     padding: 20px;
-    padding-left: 2%;
-    padding-right: 2%;
-    width: 96%;
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 92%;
 
     display: flex;
     flex-direction: row;
+}
 
+.review-container:hover {
+    transition-duration: 0.5s;
+    scale: 1.05;
+    width: 90%;
+}
+.review-container:not(hover) {
+    transition-duration: 0.5s;
+    scale: 1;
+    width: 92%;
 }
 
 .review-picture {
     width: 480px;
-    
 }
 
 .review-text {
@@ -37,4 +45,14 @@ body {
 
 .upper-row-button {
     margin-top: 30px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontalLine {
+    border: none;
+    border-bottom: 1px solid black;
 }
