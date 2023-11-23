@@ -1,14 +1,40 @@
-h1 {
-    text-align: center;
+body {
+    background-color: darkslategrey; /* Muuda paremaks värviks */
 }
 
-.review_picture_container {
+.review-container {
     float: left ;
     align-items: center;
     padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+
+
+
+}
+
+.review-picture {
+    width: 480px;
     
 }
 
-.review_picture {
-    width: 480px;
+.review-text {
+    color: white;
+    padding: 10px;
+}
+
+.upper-row {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+
+    border-style: solid;
+    border-color: black;
+}
+
+.upper-row-button {
+    margin-top: 30px;
 }

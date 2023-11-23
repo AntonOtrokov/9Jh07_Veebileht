@@ -23,7 +23,7 @@ h1{
 .upper-row {
     display:flex;
     flex-direction: row;
-    align-items: start;
+    align-items: center;
     justify-content:space-around;
     border-style: solid;
     border-color: black;
