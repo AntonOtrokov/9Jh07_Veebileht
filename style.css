@@ -1,5 +1,10 @@
 body {
     background-color: darkslategrey; /* Muuda paremaks värviks */
+    margin: 0;
+}
+
+h1 {
+    color: aliceblue;
 }
 
 .review-container {
@@ -33,7 +38,7 @@ body {
     padding: 10px;
 }
 
-.upper-row {
+.navigation-bar {
     display: flex;
     flex-direction: row;
     align-items: start;
@@ -41,9 +46,10 @@ body {
 
     border-style: solid;
     border-color: black;
+    background-color: black;
 }
 
-.upper-row-button {
+.navigation-bar-button {
     margin-top: 30px;
 
 }
@@ -56,4 +62,12 @@ body {
 .horizontalLine {
     border: none;
     border-bottom: 1px solid black;
+}
+
+.footer {
+    background-color: grey;
+}
+
+.footer-content {
+    margin: 8px;
 }
