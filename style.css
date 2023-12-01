@@ -76,11 +76,12 @@ h1 {
 }
 
 .footer {
-    background-color: grey;
+    background-color: black;
     padding-left: 64px;
     padding-right: 64px;
 }
 
 .footer-content {
     margin: 8px;
+    color: white;
 }
