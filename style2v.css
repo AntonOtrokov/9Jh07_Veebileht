@@ -39,3 +39,47 @@ h1{
     height: 309px;
 
 }
+.review-picture-nav{
+    width: 575px;
+    height:120px;
+
+}
+.main {
+    display: flex;
+    flex-direction: column;
+}
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+
+    border-style: solid;
+    border-color: black;
+    background-color: black;
+}
+
+.navigation-bar-button {
+    margin-top: 50px;
+    border-radius: 25%;
+    scale: 1.5;
+}
+
+
+.navigation-bar-button:hover {
+    transition-duration: 0.5s;
+    background-color: antiquewhite;
+    color: black;
+    
+
+    
+    
+}
+
+.navigation-bar-button:not(:hover) {
+    transition-duration: 0.5s;
+    background-color: black;
+    color: antiquewhite;
+    
+}
+
