@@ -1,5 +1,8 @@
+
+/* TODO: panna asjad paremini järjekorda, lühendada koodi kui võimalik */
+
 body {
-    background-color: darkslategrey; /* Muuda paremaks värviks */
+    background-color: darkslategrey;
     margin: 0;
 }
 
@@ -79,6 +82,18 @@ h1 {
     background-color: black;
     padding-left: 64px;
     padding-right: 64px;
+}
+
+.footer-splitter {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    
+}
+
+.footer-row {
+    display: flex;
+    flex-flow: column;
 }
 
 .footer-content {
