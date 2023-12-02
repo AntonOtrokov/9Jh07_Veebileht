@@ -2,10 +2,7 @@ body {
     background-color: rgb(39, 38, 38);
     color:white;
 }
-img{
-    height: 200px;
-    width: 300px;
-}
+
 h1{
     font-style:italic;
     text-align: left;
@@ -83,3 +80,43 @@ h1{
     
 }
 
+.youtube-link{
+    cursor: pointer;
+
+}
+
+.video-pic{
+    height: 300px;
+    width: 500px;
+}
+.youtube-player-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 400ms ease;
+}
+
+.youtube-player-overlay.active {
+    background: rgba(0, 0, 0, 0.897);
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.youtube-player-popup {
+    position: fixed;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    transition: all 400ms ease ;
+}
+
+.youtube-player-overlay.active .youtube-player-popup{
+    transform: translate(-50%,0);
+}
+.youtube-player-popup iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
