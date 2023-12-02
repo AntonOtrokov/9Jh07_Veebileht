@@ -1,11 +1,15 @@
-
-/* TODO: panna asjad paremini järjekorda, lühendada koodi kui võimalik */
-
+/* Main */
 body {
     background-color: darkslategrey;
     margin: 0;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Headers */
 h1 {
     color: aliceblue;
 }
@@ -15,6 +19,37 @@ h1 {
     padding-left: 4%;
 }
 
+/* Navigation bar */
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+
+    border-style: solid;
+    border-color: black;
+    background-color: black;
+}
+
+.navigation-bar-button {
+    margin-top: 50px;
+    border-radius: 25%;
+    scale: 1.5;
+}
+
+.navigation-bar-button:hover {
+    transition-duration: 0.5s;
+    background-color: antiquewhite;
+    color: black;
+}
+
+.navigation-bar-button:not(:hover) {
+    transition-duration: 0.5s;
+    background-color: black;
+    color: antiquewhite;
+}
+
+/* Review */
 .review-container {
     float: left ;
     padding: 20px;
@@ -47,62 +82,20 @@ h1 {
     padding: 10px;
 }
 
-
 .review-text {
     color: white;
 }
 
-.navigation-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: space-around;
-
-    border-style: solid;
-    border-color: black;
-    background-color: black;
-}
-
-.navigation-bar-button {
-    margin-top: 50px;
-    border-radius: 25%;
-    scale: 1.5;
-}
-
-
-.navigation-bar-button:hover {
-    transition-duration: 0.5s;
-    background-color: antiquewhite;
-    color: black;
-    
-
-    
-    
-}
-
-.navigation-bar-button:not(:hover) {
-    transition-duration: 0.5s;
-    background-color: black;
-    color: antiquewhite;
-    
-}
-
-
-
-.main {
-    display: flex;
-    flex-direction: column;
-}
-
-.horizontalLine {
-    border: none;
-    border-bottom: 1px solid black;
-}
-
+/* Footer */
 .footer {
     background-color: black;
     padding-left: 64px;
     padding-right: 64px;
+}
+
+.footer-content {
+    margin: 8px;
+    color: white;
 }
 
 .footer-splitter {
@@ -117,7 +110,3 @@ h1 {
     flex-flow: column;
 }
 
-.footer-content {
-    margin: 8px;
-    color: white;
-}
