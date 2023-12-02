@@ -3,8 +3,6 @@ body {
     color:white;
 }
 img{
-    border-style: solid;
-    border-width: 1px;
     height: 200px;
     width: 300px;
 }
