@@ -2,10 +2,7 @@ body {
     background-color: rgb(39, 38, 38);
     color:white;
 }
-img{
-    height: 200px;
-    width: 300px;
-}
+
 h1{
     font-style:italic;
     text-align: left;
@@ -38,4 +35,88 @@ h1{
     width: 550px;
     height: 309px;
 
+}
+.review-picture-nav{
+    width: 575px;
+    height:120px;
+
+}
+.main {
+    display: flex;
+    flex-direction: column;
+}
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+
+    border-style: solid;
+    border-color: black;
+    background-color: black;
+}
+
+.navigation-bar-button {
+    margin-top: 50px;
+    border-radius: 25%;
+    scale: 1.5;
+}
+
+
+.navigation-bar-button:hover {
+    transition-duration: 0.5s;
+    background-color: antiquewhite;
+    color: black;
+    
+
+    
+    
+}
+
+.navigation-bar-button:not(:hover) {
+    transition-duration: 0.5s;
+    background-color: black;
+    color: antiquewhite;
+    
+}
+
+.youtube-link{
+    cursor: pointer;
+
+}
+
+.video-pic{
+    height: 300px;
+    width: 500px;
+}
+.youtube-player-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 400ms ease;
+}
+
+.youtube-player-overlay.active {
+    background: rgba(0, 0, 0, 0.897);
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.youtube-player-popup {
+    position: fixed;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    transition: all 400ms ease ;
+}
+
+.youtube-player-overlay.active .youtube-player-popup{
+    transform: translate(-50%,0);
+}
+.youtube-player-popup iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
 }

@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <link rel="stylesheet" type="text/css" href="style2v.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Elden ringi vaheleht</title>
 </head>
-<body>
+<body class="body">
+    
+        <!-- Siin on Pealehe, Games, News, About us etc... riba
+        TODO: lisa div mis kontrollib riba ja sisu omavahelist käitumist.-->
+        <div class="navigation-bar">
+            
+            <a href="index.html"><img class= "review-picture-nav" src="Pildid/Ppgaming_black.png" alt="Ppgaming_black_logo"></a>
+
+            <button class="navigation-bar-button">Games</button>
+            <button class="navigation-bar-button">News</button>
+            <Button class="navigation-bar-button">About us</Button>
+            <Button class="navigation-bar-button">Register</Button>
+        </div>
+    <div class="review">
     <h1>Elden Ring</h1>
     <img class="review-picture2" src="Pildid/elden.jpg" alt="ai! ai! pilt ei lae">
         <h2>Järjekordne meistriteos FromSoftware-i ja  Hidetaka Miyazaki poolt</h2>
@@ -19,20 +32,33 @@
             Varasematest FromSoftware-i Soulslike mängudest eristubElden Ring selle poolest, et mängu lugu on edastatud natukene otsesemalt ja selgemalt. 
         </p>
         <img class= "review-picture2" src="Pildid/elden_ring2.jpg" alt="ai! ai! pilt ei lae!">
-        <p>Elden Ringi läbi mängimisel jäi sellest mulle väga positiivne mulje. Vaatamata sellele, et tegemist on väga suure maailmaga on kogu maaailmas mitmekesised vastased ning ükski ala ei tundu tühi olevat. Igal pool on midagi avastada, mõni avastus võib olla küll suht tähtsusetu, aga igav ei hakka.
+        <p>Elden Ringi läbi mängimisel jäi sellest mulle väga positiivne mulje. Vaatamata sellele, et tegemist on väga suure maailmaga on kogu maailmas mitmekesised vastased ning ükski ala ei tundu tühi olevat. Igal pool on midagi avastada, mõni avastus võib olla küll suht tähtsusetu, aga igav ei hakka.
             Mängu bossid olid unikaalsed ning mõnda ebaolulisemat minibossi oli mitu korda kasutatud, aga siis oli ka natukene ta rünnakuid muudetud. 
             Elden ringi puhul võib häirida see, et kui eesmärgiks on kõikide suuremate bossidega võitlemine, siis vähemalt kolme juurde jõudmiseks on vaja väga spetsiifilisi asju teha ning ilma õpetuseta on neid bosse pigem võimatu leida. 
             Näiteks ma ei usu, et oma esimesel mängu korral leiab Mohgwyn Palace-i, kus on üks neist bossidest. Samas see ongi Soulslike-ide võlu, et seal on palju avastada ning mänguloojad ei karda üldse luua mängu alasid, kuhu enamus mängijad oma peaga ei jõuagi. 
             
         </p>
         <h2>Mängu treiler</h2>
-        <iframe class="review-picture2"
-        src="https://cdn.akamai.steamstatic.com/steam/apps/256875461/movie480_vp9.webm?t=1646770165">
-        </iframe>
+        <div class="youtube-link" data-link="AKXiKBnzpBQ">
+            <img class="video-pic" src ="Pildid/elden-ring-video.png">
+        </div>
+        <div class="youtube-player-overlay">
+            <div class = "youtube-player-popup">
+                <iframe
+                src="https://www.youtube.com/embed/" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+                </iframe>
+                    
+            </div>
+        </div>
         <p>Saadaval platvormidel</p>
         <a href="https://store.steampowered.com/app/1245620/ELDEN_RING/"><img class="review-picture" src="Pildid/pc_transparent.png" alt="steam"></a>
         <a href="https://www.xbox.com/en-US/games/elden-ring/"><img class="review-picture" src="Pildid/xbox_transparent.png" alt="xbox"></a>
         <a href="https://store.playstation.com/en-us/product/UP0700-PPSA04610_00-ELDENRING0000000"><img class="review-picture" src="Pildid/ps_transparent.png" alt="xbox"></a>
     </div>
+    <script src ="main.js"></script>
 </body>
 </html>

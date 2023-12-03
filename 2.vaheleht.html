@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <link rel="stylesheet" type="text/css" href="style2v.css">
     <meta charset="UTF-8">
@@ -7,14 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="upper-row">
+    <!--
+        Vana lehe header
+        <div class="upper-row">
 
-        <a href = "index.html"><button class="upper-row-button">Pealeht</button></a>
+        <a href = "index.html"><button class="upper-row-button">Pealeht</a>
         <button class="upper-row-button">Games</button>
         <button class="upper-row-button">News</button>
         <Button class="upper-row-button">About us</Button>
         <Button class="upper-row-button">Register</Button>
-    </div>
+    </div> -->
+    <!-- Siin on Pealehe, Games, News, About us etc... riba
+        TODO: lisa div mis kontrollib riba ja sisu omavahelist käitumist.-->
+        <div class="navigation-bar">
+            
+            <a href="index.html"><img class= "review-picture-nav" src="Pildid/Ppgaming_black.png" alt="Ppgaming_black_logo"></a>
+
+            <button class="navigation-bar-button">Games</button>
+            <button class="navigation-bar-button">News</button>
+            <Button class="navigation-bar-button">About us</Button>
+            <Button class="navigation-bar-button">Register</Button>
+        </div>
     <div class = "headline">
     <h1>Minecraft</h1>
     <img class= "review-picture2" src="Pildid/Minecraft_basic.jpg" alt="oi! midagi on katki">
@@ -32,23 +45,41 @@
         <a href="https://www.youtube.com/embed/CW9N6kGbu2I"><img class="review-picture2" src="Pildid/arvuti.png" alt="siin peaks pilt olema"></a>
         <p>Minecraftis ehitatud töötav arvuti(pildile vajutades leiate ka video)</p>
         <br>
+        <p>Minecraftil on hästi aktiivne kogukond, kus koguaeg jagatakse uusi ehitisi, ehitamisstiile ja keerulisi punakivi leiutisi.
+            Minecraftis on palju servereid ning ka palju mängijaid. Serverites on võimalik mängida erinevaid minigame, mis on heaks vahelduseks survival mode-ile. Populaarsemad minigame-id on Bedwars, Skyblock ja erinevad ehitusvõistlused.</p>
         <img class= "review-picture2" src="Pildid/minecraft_middle_earth.jpg" alt="oi! midagi on katki">
         "Kääbikust" ja "Sõrmuste isandast" Kuningatemaa Minecraftis ehitatuna
         <p>
-            Minecraftil on hästi aktiivne kogukond
-
+            Mulle meeldib vabadus, mis on mulle mängus antud. Ma olen üks neist, kellele meeldib oma kujutlusvõimet realiseerida ja Minecraft on selleks päris hea vahend. Näiteks olen ise ehitanud võluritorne, losse, punakivi uksi, lifte ja automaatfarme. 
+            Lisaks on lahe see, et siin on võimalik peaaegu kõike automatiseerida punakivi abiga. Sõpradega koos Survival mode-is mängides on võimalik omavahel ülesanded ära jagada ning mängu on võimalik kasutada meeskonnatöö arendamiseks. 
+            Mängu puhul häirib see, et osad uuendused ei sobi mängu. Näiteks Deep dark-i uuendus tõi endaga kaasa ancient city ala, kus esineb minu meelest mängu mitte sobiv warden. Warden ei sobi sinna, sest ta on mõttetult tugev ning tema tekkimist on raske ennetada.
+            Nagu sellest veel ei piisaks, on tal võimas rünnak, mis tapab sind ühe löögiga isegi raudrüüs,kilbistki pole kasu, sest warden on võimeline selle kahjutuks tegema.(noorema venna rant :D)
         </p>
-            <h2>Mängu ühte uuendust tutvustav treiler</h2> 
-            <iframe class="review-picture2"
-            src="https://www.youtube.com/embed/Rla3FUlxJdE">
-            </iframe>
-            <p>Saadaval platvormidel</p>
-            <a href="https://www.minecraft.net/en-us/download"><img class="review-picture" src="Pildid/pc_transparent.png" alt="pc"></a>
-            <a href="https://www.xbox.com/en-US/games/store/minecraft/9mvxmvt8zkwc"><img class="review-picture" src="Pildid/xbox_transparent.png" alt="xbox"></a>
-            <a href="https://store.playstation.com/en-us/concept/212779"><img class="review-picture" src="Pildid/ps_transparent.png" alt="xbox"></a>
-            <a href="https://www.nintendo.com/us/store/products/minecraft-switch/"><img class="review-picture" src="Pildid/nintendo_transparent.png" alt="nintendo"></a>
-            <a href="https://play.google.com/store/apps/details?id=com.mojang.minecraftpe&hl=en&gl=US"><img class="review-picture" src="Pildid/android_transparent.png" alt="android"></a>
-            <a href="https://apps.apple.com/us/app/minecraft/id479516143"><img class="review-picture" src="Pildid/apple_transparent.png" alt="steam"></a>
+        <p>PS! arvamus pärineb veebilehe looja nooremalt vennalt, enda Minecraft-i kogemus on puudulik</p>
+        <h2>Mängu ühte uuendust tutvustav treiler</h2> 
+        <div class="youtube-link" data-link="Rla3FUlxJdE?si=V754K14pkFKa4Tpl">
+            <img class="video-pic" src ="Pildid/minecraft-video.png">
+        </div>
+        <div class="youtube-player-overlay">
+            <div class = "youtube-player-popup">
+                <iframe
+                src="https://www.youtube.com/embed/" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+                </iframe>
+                    
+            </div>
+        </div>
+        <p>Saadaval platvormidel</p>
+        <a href="https://www.minecraft.net/en-us/download"><img class="review-picture" src="Pildid/pc_transparent.png" alt="pc"></a>
+        <a href="https://www.xbox.com/en-US/games/store/minecraft/9mvxmvt8zkwc"><img class="review-picture" src="Pildid/xbox_transparent.png" alt="xbox"></a>
+        <a href="https://store.playstation.com/en-us/concept/212779"><img class="review-picture" src="Pildid/ps_transparent.png" alt="xbox"></a>
+        <a href="https://www.nintendo.com/us/store/products/minecraft-switch/"><img class="review-picture" src="Pildid/nintendo_transparent.png" alt="nintendo"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.mojang.minecraftpe&hl=en&gl=US"><img class="review-picture" src="Pildid/android_transparent.png" alt="android"></a>
+        <a href="https://apps.apple.com/us/app/minecraft/id479516143"><img class="review-picture" src="Pildid/apple_transparent.png" alt="steam"></a>
     </div>
+    <script src ="main.js"></script>
 </body>
 </html>
