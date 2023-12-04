@@ -3,15 +3,13 @@
 p {
     color: white;
     max-width: 700px;
-    text-align: center;
-    margin: auto;
 }
 
 
 /* Review 2.0 */
-.review{
-    text-align: center;
+.review {
     padding: 32px;
+    margin: auto;
 }
 
 .review-picture {
