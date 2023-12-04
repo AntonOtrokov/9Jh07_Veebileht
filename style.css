@@ -33,14 +33,15 @@ h2 {
     justify-content: space-around;
 
     border-style: solid;
-    border-color: black;
     background-color: black;
 }
 
 .navigation-bar-button {
     margin-top: 50px;
     border-radius: 25%;
-    scale: 1.5;
+    font-size: large;
+    
+
 }
 
 .navigation-bar-button:hover {
@@ -69,12 +70,12 @@ h2 {
 
 .review-container:hover {
     transition-duration: 0.5s;
-    scale: 1.05;
+    transform: scale(1.05);
     width: 90%;
 }
 .review-container:not(hover) {
     transition-duration: 0.5s;
-    scale: 1;
+    transform: scale(1);
     width: 92%;
 }
 
@@ -89,7 +90,7 @@ h2 {
 
 
 .review-text-container {
-    container: flex;
+    display: flex;
     flex-direction: column;
     padding: 10px;
 }
