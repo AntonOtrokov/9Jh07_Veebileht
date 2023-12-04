@@ -12,6 +12,8 @@ body {
 /* Headers */
 h1 {
     color: aliceblue;
+    font-style: italic;
+    text-align: center;
 }
 
 h2 {
